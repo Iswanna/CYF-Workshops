@@ -8,14 +8,20 @@
 const sentence = "I really enjoy ice cream";
 
 for (const part of sentence) {
-    console.log(part);
+  //console.log(part);
 }
 
 // What's the difference between what was written above, and what's below?
 // How will they behave differently?
 
 const parts = sentence.split(" ");
+//console.log(parts)
 
 for (const part of parts) {
-    console.log(part);
+  // console.log(part);
+}
+
+// for with i
+for (i < parts.length; i = 0; i--) {
+  console.log(parts[i]);
 }

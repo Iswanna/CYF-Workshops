@@ -4,6 +4,8 @@
 // So if you called the function with "hello", then "HELLO", the second call will return "hello".
 // If the word has not been used before, it will just be returned as-is.
 
+//const { act } = require("react");
+
 // One of these functions has side-effects.
 // When you call it, it does something other than just returning a value based only on its parameters.
 //
@@ -17,21 +19,31 @@
 
 const previousWords = [];
 
-function getPreviousCaseOfWordOne(word) {
-    for (const previousWord of previousWords) {
-        if (previousWord.toLowerCase() === word.toLowerCase()) {
-            return previousWord;
-        }
+// function getPreviousCaseOfWordOne(word) {
+//     for (const previousWord of previousWords) {
+//         if (previousWord.toLowerCase() === word.toLowerCase()) {
+//             console.log(previousWord);
+//             return previousWord;
+//         }
+//     }
+//     previousWords.push(word);
+//     return word;
+// }
+
+// const actualOutput = getPreviousCaseOfWordOne("hello");
+// console.log(actualOutput);
+function getPreviousCaseOfWordTwo(word, words) {
+  for (const previousWord of words) {
+     console.log("previouswords", previousWord);
+    //console.log("word", word);
+    if (previousWord.toLowerCase() === word.toLowerCase()) {
+      console.log("return", previousWord);
+      return previousWord;
     }
-    previousWords.push(word);
-    return word;
+  }
+  console.log("word", word);
+
+  return word;
 }
 
-function getPreviousCaseOfWordTwo(word, words) {
-    for (const previousWord of words) {
-        if (previousWord.toLowerCase() === word.toLowerCase()) {
-            return previousWord;
-        }
-    }
-    return word;
-}
+const actualResult = getPreviousCaseOfWordTwo("HELLO", ["hello"]);
