@@ -15,14 +15,14 @@ const person2 = {
     "id_number": 28,
 };
 
-const person3 = person2;
+const person3 = person2;  // variable person2 will hold a reference to the same object as variable person3
 
-person3.location = "Manchester";
+person3.location = "Manchester";  //this expression is reassigning value "Manchester" to the key "location"
 
-console.log(person1.name);
-console.log(person2["name"]);
-console.log(person1.id_number > person2["id_number"]);
-console.log(person1.job);
-console.log(person1.location === person2.location);
-console.log(person1.location === person3.location);
-console.log(person2.location === person3.location);
+console.log(person1.name);  // Abdi
+console.log(person2["name"]); // Shadi
+console.log(person1.id_number > person2["id_number"]);  // false
+console.log(person1.job); // undefined
+console.log(person1.location === person2.location); // false
+console.log(person1.location === person3.location);  // false
+console.log(person2.location === person3.location);  // true
