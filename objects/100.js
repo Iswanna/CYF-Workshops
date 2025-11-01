@@ -15,7 +15,7 @@ const person2 = {
     "id_number": 28,
 };
 
-const person3 = person2;  // variable person2 will hold a reference to the same object as variable person3
+const person3 = person2;  // variable person2 will hold a reference to the same object as variable person3. This is because an object is a reference type.
 
 person3.location = "Manchester";  //this expression is reassigning value "Manchester" to the key "location"
 
