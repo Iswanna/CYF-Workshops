@@ -15,8 +15,15 @@ type User = {
  * You are welcome to edit the parameters, the return value, or any other part of createUser. Do not edit the type User or the tests.
  * */
 const createUser = () => {
-  return {};
+  return {
+    id: 1,
+    name: "John",
+    age: 25,
+    isTrainee: true,
+    completedCourses: ["ITP"]
+  };
 };
+
 
 export { createUser };
 
