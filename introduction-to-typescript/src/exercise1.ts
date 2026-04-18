@@ -14,7 +14,7 @@ type User = {
  * The tests already expect createUser to do this so pay attention to what the tests are expecting and address those problems.
  * You are welcome to edit the parameters, the return value, or any other part of createUser. Do not edit the type User or the tests.
  * */
-const createUser = () => {
+const createUser = (): User => {
   return {
     id: 1,
     name: "John",
