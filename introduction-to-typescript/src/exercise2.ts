@@ -1,6 +1,6 @@
 /** Your goal for this exercise is to add reasonable types to this function. The failing tests can guide you towards an expected result. */
 
-export const addTwoNumbers = (a, b) => {
+export const addTwoNumbers = (a: number, b: number): number => {
   return a + b;
 };
 

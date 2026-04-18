@@ -15,6 +15,6 @@ export const tryCatchDemo = (state: "fail" | "succeed") => {
       throw new Error("Failure!");
     }
   } catch (error) {
-    return error.message;
+    return (error as Error).message;
   }
 };
